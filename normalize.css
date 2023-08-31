@@ -1,0 +1,59 @@
+:root {
+  --clr-black: #141414;
+  --clr-white: #eceffe;
+
+  --clr-primary: #7c40f5;
+  --clr-secondary: #bd10e0;
+
+  --fs-0: clamp(0.88rem, calc(0.82rem + 0.25vw), 1.13rem);
+  --fs-1: clamp(1.05rem, calc(0.97rem + 0.36vw), 1.41rem);
+  --fs-2: clamp(1.26rem, calc(1.15rem + 0.51vw), 1.76rem);
+  --fs-3: clamp(1.51rem, calc(1.36rem + 0.7vw), 2.2rem);
+
+  --pd-x: 2rem;
+  --navbar-h: 3rem;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+h1 {
+  font-size: var(--fs-3);
+  color: var(--clr-primary);
+}
+
+h2 {
+  font-size: var(--fs-2);
+  color: var(--clr-secondary);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 2;
+}
+
+a {
+  font-size: var(--fs-1);
+  text-decoration: none;
+}
+
+p {
+  font-size: var(--fs-0);
+  margin-bottom: 1.35em;
+}
+
+li {
+  list-style-type: none;
+}
