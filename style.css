@@ -1,0 +1,60 @@
+.navbar {
+  width: 100%;
+  height: var(--navbar-h);
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  margin-block: 2em;
+}
+
+.navbar ul .links {
+  color: var(--clr-white);
+  transition: color 0.2s ease-out;
+
+  &:hover {
+    color: #fa0;
+  }
+}
+
+.progress {
+  position: fixed;
+  width: 100%;
+  height: 0.25em;
+
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  background-color: greenyellow;
+  box-shadow: 0 0 12px 1px greenyellow;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progress linear;
+  animation-timeline: scroll();
+}
+
+@keyframes progress {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.content {
+  max-width: 85ch;
+  margin: 0 auto;
+  padding-inline: var(--pd-x);
+}
+
+@media (width >= 48rem) {
+  :root {
+    --pd-x: 5rem;
+  }
+  .content {
+    max-width: 100ch;
+  }
+}
